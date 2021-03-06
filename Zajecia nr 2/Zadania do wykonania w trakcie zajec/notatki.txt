@@ -4,6 +4,10 @@
 # a = 23
 # równa się matematyczne ==
 #a == 23
+
+#rozne od !=
+# a != 23 -> a jest rozne od 23
+
 #Fałsz
 print(bool(0))
 print(bool([]))
