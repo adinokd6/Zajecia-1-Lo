@@ -88,3 +88,26 @@ Konwersja zmiennych na rozne typy zmiennych
 # str(x)
 
 /***************************************************************/
+
+# import time
+#while(warunek) ->jezeli warunek spelniony to wychodze z petli
+#->jezeli warunek nie jest spelniony to wykonuje sie w nieskonczonosc i czekam az ten warunek bedzie w koncu spelniony
+# # while -> do jakiegos czasu
+
+# licznik=10
+# while 1: #warunek zawsze jest spelniony
+#   print(licznik)
+
+# while(licznik<=10):
+#   print(licznik)
+#   licznik-=1
+
+# napis="lampka"
+# a=0
+
+#dlugosc stringa len()
+
+# while(a<len(napis)): #0->5
+#   print(napis[a])
+#   a+=1
+
