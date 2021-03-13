@@ -7,4 +7,6 @@ Wczytaj dwie liczby naturalne a i b (możesz to zrobic za pomocą a,b = input() 
 Wypisz każdą liczbę podzielną przez 2021, należącą do przedziału <a,b> 
 
 Zadania.3
-Napisz program, którego zadaniem będzie obliczenie dnia w którym zakończy się dane wydarzenie. Użytkownik podaje na wejściu datę rozpoczęcia wydarzenia i godzinę. Następnie ( w minutach) ile dane wydarzenie będzie trwać. Program ma wypisać na wyjściu dzień (razem z poprawnym rokiem zakończenia) oraz godzinę. Dla uproszczenia przyjmij, że każdy miesiąc ma 30 dni.
+Napisz program, którego zadaniem będzie obliczenie dnia w którym zakończy się dane wydarzenie. 
+Użytkownik podaje na wejściu datę rozpoczęcia wydarzenia i godzinę. Następnie ( w minutach) ile dane wydarzenie będzie trwać. 
+Program ma wypisać na wyjściu dzień (razem z poprawnym rokiem zakończenia) oraz godzinę. Dla uproszczenia przyjmij, że każdy miesiąc ma 30 dni.
