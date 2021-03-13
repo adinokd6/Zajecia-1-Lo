@@ -1,0 +1,74 @@
+#Zadanie 1
+# while(True):
+#   liczba1 = int(input())
+#   liczba2 = int(input())
+#   dzialanie = input()
+
+#   if dzialanie == "+":
+#     print(liczba1+liczba2)
+#   elif dzialanie == "-":
+#     print(liczba1-liczba2)
+#   elif dzialanie == "*":
+#     print(liczba1*liczba2)
+#   elif dzialanie == "/":
+#     print(liczba1/liczba2)
+#   elif dzialanie == "q":
+#     break
+
+#Zadanie 2 
+# a = input()
+# if a%2 == 0:
+#   print("parzysta!")
+# else:
+#   print("nieparzysta:(")
+
+#Zadanie 3
+# konwerter = input("jaka konwersja? ")
+# moc = input("jaka wartość? ")
+# if konwerter == "KM":
+#   print(moc * 0.735, "kW")
+# elif konwerter == "kW":
+#   print(1.36 * moc, "KM")
+# else: 
+#   print("zła jednostka!")
+
+#Zadanie 4 
+# liczba = input()
+# odwrotna = ""
+# znak = len(liczba)-1
+
+# while znak >= 0:
+#   odwrotna += liczba[znak]
+#   znak = znak - 1
+# print(odwrotna)
+
+#wersja z ucinaniem zer końcowych np. 12300 -> 321
+# liczba = input()
+# odwrotna = ""
+# znak = len(liczba)-1
+
+# while znak >= 0:
+#   if liczba[znak] == '0' and  odwrotna == "":
+#     znak = znak - 1
+#   else:
+#     odwrotna += liczba[znak]
+#     znak = znak - 1
+# print(odwrotna)
+
+
+#Zadanie 5
+# odleglosc = int(input("jaka jest odległośc między chłopcami? "))
+# stopaK = int(input("stopa kazika: "))
+# stopaA = int(input("stopa adriana: "))
+
+# kroki = 0
+# while(odleglosc>=0):
+#   if kroki%2 == 0:
+#     odleglosc = odleglosc - stopaK
+#   else:
+#     odleglosc = odleglosc - stopaA
+#   kroki = kroki + 1
+# if kroki%2 == 0:
+#   print("Adrian")
+# else:
+#   print("Kazik")
