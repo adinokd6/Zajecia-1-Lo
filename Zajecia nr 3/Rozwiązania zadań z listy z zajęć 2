@@ -72,3 +72,24 @@
 #   print("Adrian")
 # else:
 #   print("Kazik")
+
+
+#Zadanie 6
+blokow = int(input("Wprowadź liczbę bloków: "))
+
+wysokosc = 1
+
+if blokow == 0:
+    wysokosc = 0
+else:
+    while blokow > 0:
+    
+        blokow -= wysokosc
+        print("*" * wysokosc)
+        
+        if blokow == 0 or wysokosc >= blokow:
+            break
+        else:
+            wysokosc += 1
+
+print("Wysokość piramidy wynosi:", wysokosc,'Pozostalych bloków:',blokow,sep=" ")
