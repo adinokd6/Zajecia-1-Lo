@@ -3,7 +3,7 @@ Wczytaj liczbę n i napisz jaka jest suma jej parzystych cyfr, a jaka - nieparzy
 (mamy liczbę n i chcemy wypisać "Suma nieparzystych: (tutaj suma)"
                                 "Suma parzystych: (tutaj suma)"
 Zadanie 2.
-Wczytaj dwie liczby naturalne a i b (możesz to zrobic za pomocą a,b = input()    a = int(a)   b = int(b)  )
+Wczytaj dwie liczby naturalne a i b (możesz to zrobic za pomocą a = input() b=input()   a = int(a)   b = int(b)  )
 Wypisz każdą liczbę podzielną przez 2021, należącą do przedziału <a,b> 
 
 Zadania.3
