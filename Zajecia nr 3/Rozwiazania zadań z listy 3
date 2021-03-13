@@ -1,0 +1,27 @@
+#zadanie 1 lista 3
+n = input()
+dlugosc = len(n) - 1
+suma_nieparzystych = 0
+suma_parzystych = 0
+
+while dlugosc >= 0:
+  if int(n[dlugosc]) % 2 == 0:
+    suma_parzystych += int(n[dlugosc])
+  else:
+    suma_nieparzystych += int(n[dlugosc])
+  dlugosc -= 1
+print(suma_parzystych)
+print(suma_nieparzystych)
+
+
+#zadanie 2 lista 3 
+# a = int(input())
+# b = int(input())
+
+# i = a
+# while(i<=b):
+#   if i%2021 == 0:
+#     print(i)
+#     i+=2021
+#   else:
+#     i+=1
