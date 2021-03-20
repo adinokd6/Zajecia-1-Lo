@@ -100,3 +100,13 @@ names=["Maciek","Michal","Tomek"]
 
 for i in range(5):
   print(i*"*")
+  
+# usuwanie elementu 
+lista = [1,2,3,4]
+del lista[:2]
+print(lista)
+lista.remove(4)
+print(lista)
+a =lista.pop(0)
+print(a)
+print(lista)
