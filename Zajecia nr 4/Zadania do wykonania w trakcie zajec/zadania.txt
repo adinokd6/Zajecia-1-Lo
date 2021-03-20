@@ -36,6 +36,8 @@ podanie poprawnej liczby).
 
 5.Napisz program, którego zadaniem będzie wypisanie z ilu cyfr składa się wynik działania silni. 
 Czyli np dla 5! program ma wyświetlić: “Wynik 5! składa się z 3 cyfr”.
+5!=1*2*3*4*5=60->2
+6!=360->3 
 
 6.Napisz program, którego zadaniem będzie narysowanie krzyża składającego się z dowolnie podanego przez użytkownika znaku. 
 Program przyjmuje od użytkownika jeden znak a następnie za jego pomocą rysuje krzyż na ekranie.
