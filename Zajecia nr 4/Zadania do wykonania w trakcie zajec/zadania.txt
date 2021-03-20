@@ -8,7 +8,7 @@ random.choice(lista) # wylosuj element z listy lista
 
 -------------------------------------------------------------
 
-1.Napisz, krótką grę “Zgadnij liczbę”. Twój program powinien wygenerować losową liczbę n, a potem zapytać  użytkownika o odgadnięcie liczby. 
+1.Napisz, krótką grę “Zgadnij liczbę”. Twój program powinien wygenerować losową liczbę n z przedziału (0,100), a potem zapytać  użytkownika o odgadnięcie liczby. 
 Jeśli podał liczbę za małą lub za dużą - poinformuj go o tym i poproś o inna liczbę. 
 Gdy odgadnie liczbę - poinformuj go o sukcesie i liczbie jego prób.
 
