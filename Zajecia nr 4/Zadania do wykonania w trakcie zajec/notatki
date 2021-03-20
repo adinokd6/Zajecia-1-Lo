@@ -1,0 +1,25 @@
+#wyrazenia złożone
+and 
+a = 10
+if(warunek1):
+
+  if(warunek2):
+    print("aha")
+
+if warunek1 and  warunek2 and warunek1:
+  print("aha")
+
+or
+
+if warunek1 or warunek2:
+  print("aha")
+
+not
+
+a = ""
+
+if a != "":
+  print("aha")
+
+if not a:
+  print("aha")
