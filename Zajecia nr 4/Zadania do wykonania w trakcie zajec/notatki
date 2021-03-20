@@ -23,3 +23,15 @@ if a != "":
 
 if not a:
   print("aha")
+  # break - wychodzimy z pętli (jesteśmy poza pętlą)
+# continue - idziemy na początek pętli
+licznik = 10;
+while (warunek):
+  while(True):
+    print("agnieszka")
+    if licznik == 100:
+      break
+    if licznik == 20:
+      continue
+    licznik +=1
+
