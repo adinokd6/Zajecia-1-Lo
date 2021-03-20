@@ -35,3 +35,35 @@ while (warunek):
       continue
     licznik +=1
 
+#LISTY
+#int tab[10]
+lista1 = [] # pusta lista
+lista2 = [ 1,2,3,5]
+print(lista2)
+#dodawanie do listy na końcu
+lista1.append("ada")
+print(lista1)
+lista1.append([124,34])
+print(lista1)
+
+# dodawanie elementu w dowolne miejsce
+
+lista1.insert(1,"karol")
+print(lista1)
+
+#długosc listy 
+print(len(lista1))
+
+#łączenie list
+
+lista3 = lista1+lista2
+print(lista3)
+
+#wycinki
+lista_nowa = [0,1,2,3,4,5,6]
+
+l1 = lista_nowa[3:]
+l2 = lista_nowa[:]
+l3 = lista_nowa[2:4]
+l4 = lista_nowa[:5]
+print(l1)
