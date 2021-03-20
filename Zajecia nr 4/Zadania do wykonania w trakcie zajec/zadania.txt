@@ -1,3 +1,13 @@
+Do zadania 1 i 2 będą potrzebne:
+import random  #moduł potrzebny do losowania
+
+
+random.randint(1,6) #wylosuj liczbę z zakresu od 1 do 6
+random.randrange(6) # wylosuj liczbę z zakresu od 0 do 5
+random.choice(lista) # wylosuj element z listy lista
+
+-------------------------------------------------------------
+
 1.Napisz, krótką grę “Zgadnij liczbę”. Twój program powinien wygenerować losową liczbę n, a potem zapytać  użytkownika o odgadnięcie liczby. 
 Jeśli podał liczbę za małą lub za dużą - poinformuj go o tym i poproś o inna liczbę. 
 Gdy odgadnie liczbę - poinformuj go o sukcesie i liczbie jego prób.
