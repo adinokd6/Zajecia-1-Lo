@@ -5,11 +5,11 @@ Napisz program, który sprawdza czy liczba jest doskonała. Liczba doskonała to
 
 
 3.Za pomocą pętli for narysuj choinke o zadanej przez użytkownika ilości segmentów. Choinka wraz ze wzrostem wysokości ma zmieniać też swoją szerokość. Ta przykładowa składa się z 2 segmentów (minimalna liczba segmentów to 2. Jeżeli użytkownik wprowadzi liczbe mniejsza lub ujemną program poprosi o podanie poprawnej liczby).
-      *
-    *  *
+     *
+    * *
    *****
-    *  *
-   *    *
+   *   *
+  *     *
   *******
     # #
     ###
@@ -18,13 +18,13 @@ Napisz program, który sprawdza czy liczba jest doskonała. Liczba doskonała to
 
 5.Napisz program, którego zadaniem będzie narysowanie krzyża składającego się z dowolnie podanego przez użytkownika znaku. Program przyjmuje od użytkownika jeden znak a następnie za jego pomocą rysuje krzyż na ekranie.
 
-    ######
-    ######
-    ######
+      ######
+      ######
+      ######
 ##################
 ##################
 ##################
-    ######
-    ######
-    ######
+      ######
+      ######
+      ######
 
