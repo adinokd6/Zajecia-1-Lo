@@ -15,6 +15,7 @@ Gdy odgadnie liczbę - poinformuj go o sukcesie i liczbie jego prób.
 2.Stwórz program, który tworzy angramy. Anagram to słowo stworzone z innego słowa, w którym pomieszaliśmy litery np. kot tok to angramy. 
 Stwórz listę słów, wylosuj z niej jedno słowo. 
 Pomieszaj w nim litery (wskazówka: użyj random i wycinania z listy oraz konkatenacji). 
+Anagram moze skladać się z mniejszej ilości liter jeśli w wejściowym słowie było klika taich samych np mama -> am
 Następnie wyświetl użytkownikowi zagadkę angram i każ mu odgadnąć jaki był pierwowzór tego słowa.
 
 3.Napisz program, który sprawdza czy liczba jest doskonała. Liczba doskonała to taka liczba, która jest sumą 
