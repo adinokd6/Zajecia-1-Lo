@@ -1,0 +1,12 @@
+liczba = int(input("Wpisz liczbe: "))
+suma = 0
+dzielnik = 1
+while(dzielnik != liczba//2 + 1):
+  if(liczba % dzielnik == 0):
+    suma+=dzielnik
+  dzielnik+=1
+
+if(suma == liczba):
+  print("Doskonała")
+else:
+  print("Nie jest doskonała")
