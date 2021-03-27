@@ -1,0 +1,46 @@
+Zadanie 1.
+Dane jest n liczb niewiększych niż 1000. Oblicz sumę wszystkich liczb dwucyfrowych spośród nich.
+Czyli wczytaj ile liczby dostaniesz (n), a potem wczytaj do listy n liczb i sprawdź, która z nich jest dwucyfrowa.
+
+Przykład: 
+5
+3 70 123 13 3
+poprawna odpowiedź:
+83
+Zadanie powstało w ramach projektu edukacyjnego Mazowieckie Talenty.
+Zadanie 2.
+Jaś często grywa w chińczyka. Podczas każdej gry zapisuje wyniki wszystkich swoich rzutów kostką. 
+Pewnego dnia postanowił pochwalić się Małgosi swoim niesamowitym szczęsciem i powiedzieć jej ile "szóstek" wyrzucił w dotychczasowej karierze.
+Niestety okazało się, że notatki Jasia są bardzo długie, a lada moment przychodzi Małgosia. Pomóż Jaświ policzyć ile szóstek ma na swoim koncie!
+
+W pierwszej linii wejścia znajduje się liczba całkowita n  oznaczająca liczbę rzutów kostką zapisanych przez Jasia.
+W drugiej linii wejścia znajduje się n  pooddzielanych spacjami liczb całkowitych , oznaczających wyniki kolejnych rzutów.
+
+W pierwszym i jedynym wierszu wyjścia należy wypisać liczbę "szóstek" znajdujących się w notatkach Jasia.
+
+Przykład:
+7
+5 6 6 1 1 6 4
+
+Wynik:
+3
+Zadanie powstało w ramach projektu edukacyjnego Mazowieckie Talenty.
+
+Zadanie 3.
+Jaś wraca do domu, jednak na moście ktoś rozłożył w linii prostej pinezki. Most jest tak wąski, że nie można przejść obok - pinezki trzeba przeskoczyć.
+Pinezki nie są rozłożone wszystkie obok siebie, czasami znajdują się miejsca, na których można stanąć.
+
+Most złożony jest z  desek i na każdej z nich może znajdować się pinezka. Na deskach bez pinezek Jaś może stawać, natomiast na tych z pinezkami już nie. 
+Chcielibyśmy wiedzieć, jaki największy skok musi posiadać Jaś, aby mógł przejść na drugą stronę mostu. Długość skoku to liczb desek, które może maksymalnie przeskoczyć Jaś.
+W pierwszej linii wejścia znajduje się jedna liczba całkowita n, oznaczająca liczbę desek, z których zbudowany jest most. W kolejnym wierszu
+znajduje się n liczb całkowitych  o wartościach 1 lub 0 , gdzie  oznacza opis -tej deski: 0 - jeśli na desce nie ma pinezki, 1 - jeśli na desce jest pinezka.
+Przykład:
+7
+0 1 0 1 1 1 1
+Wynik
+4
+Autor zadania: Joanna Bujnowska.
+
+
+
+
