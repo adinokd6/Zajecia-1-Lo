@@ -1,0 +1,39 @@
+import random
+
+slowa = []
+
+for i in range(5):
+  slowo = input("Wpisz slowo: ")
+  slowa.append(slowo)
+
+zagadka = random.choice(slowa)
+nowe_slowo = ""
+zagadka2 = list(zagadka)
+i=0
+while(zagadka2 != []):
+  literka = random.choice(zagadka2)
+  # while(len(zagadka2)==len(zagadka) and literka==zagadka[0]):
+  #   literka = random.choice(zagadka2)
+  if i==0 and literka == zagadka[0]:
+    continue
+  zagadka2.remove(literka)
+  nowe_slowo += literka
+  i+=1
+
+print("Twój anagram to:", nowe_slowo)
+
+od_uzytkownika = input("Podaj słowo:" )
+while(od_uzytkownika != zagadka):
+  od_uzytkownika = input("Podaj słowo:" )
+print("Zgadłeś")
+
+
+
+
+
+
+
+
+
+
+
