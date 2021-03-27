@@ -1,0 +1,21 @@
+import random 
+
+
+
+losowa = random.randrange(101) 
+# losowa = random.randint(0,100)
+print(losowa)
+od_uzytkownika = int(input())
+liczba_prob = 1
+
+while(od_uzytkownika != losowa):
+  if(od_uzytkownika < losowa):
+    print("Za mała, podaj kolejną liczbę: ")
+    od_uzytkownika = int(input())
+  else:
+    print("Za duża, podaj kolejną liczbę: ")
+    od_uzytkownika = int(input())
+  liczba_prob += 1
+
+print("Udało ci się!")
+print("Liczba prób", liczba_prob)
