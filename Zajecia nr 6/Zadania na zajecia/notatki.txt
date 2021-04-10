@@ -40,3 +40,11 @@ def suma(l1,l2):
 stala1 = 32
 suma2 = suma(4,2) + 3
 print(suma2)
+
+def funkcja(*nati):
+  iloczyn = 1
+  for arg in nati:
+    iloczyn = iloczyn * arg
+  print(iloczyn)
+  
+funkcja()
