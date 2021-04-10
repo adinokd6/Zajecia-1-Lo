@@ -86,3 +86,31 @@ x = 7
 x = 8
 
 urodziny2(imie="Kasia")
+
+
+###########
+Rekurencja
+
+#rekurencja 
+
+
+# def funkcja(parametr1):
+#   #jakeis dzialanie
+#   return funkcja(parametr-1)
+
+#   ->krok1->krok2
+
+def rec_fib(number):
+  print("wchodze do funkcji",number)
+  if number <= 1:
+    return number
+  else:
+    return (rec_fib(number-1)+rec_fib(number-2))
+
+
+print(rec_fib(4))
+
+# rec_fib(4)->rec_fib(3)+rec_fib(2)
+# #nastepne kroki
+# rec_fib(3)->rec_fib(2)+rec_fib(1)->1+1
+# rec_fib(2)->rec_fib(1)+rec_fib(0)->1+0
