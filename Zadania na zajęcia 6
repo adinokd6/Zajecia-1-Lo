@@ -1,6 +1,0 @@
-Zad 1.Napisz funkcję, która liczy sumę wielu liczb 
-Zad 2.Napisz funkcję wyliczającą n-ty wyraz ciągu Fibonacciego  
-Zad 3.Napisz funkcję która zwraca średnią arytmetyczną podanych argumentów lub 0 gdy podamy 0 argumentów 
-Zad 4.Liczbę naturalną n będziemy nazywać liczbą osiągalną, jeżeli istnieje takie k, że n =k+ s(k) , gdzie k jest liczbą naturalną, a s(k)
-jest sumą cyfr liczby k w zapisie dziesiętnym. Znany jest fakt: jeśli n jest liczbą czterocyfrową i n=k+s(k) ,to s( k) <= 36.
-Napisz funkcję sprawdzającą, czy liczba naturalna n z przedziału [1000,9999] jest liczbą osiągalną korzystając z tego faktu.
