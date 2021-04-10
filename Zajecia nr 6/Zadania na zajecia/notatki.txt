@@ -33,6 +33,9 @@ l="a"
 
 wyszukaj(s,l)
 
+
+#Zmienne lokalne i globalne
+
 def suma(l1,l2):
   suma = l1+l2
   return suma 
@@ -41,6 +44,13 @@ stala1 = 32
 suma2 = suma(4,2) + 3
 print(suma2)
 
+#suma to zmienna lokalna w funkcji suma
+#jest widoczna tylko w tej funkcji, poza nią nie istnieje!
+
+# suma2, stala1 to zmienne globalne widoczne poza funkcjami
+
+
+#jak przyjąć argumenty gdy nie wiemy ile ich będzie?
 def funkcja(*nati):
   iloczyn = 1
   for arg in nati:
@@ -48,3 +58,31 @@ def funkcja(*nati):
   print(iloczyn)
   
 funkcja()
+funkcja(1,2,3,4)
+#funkcja funkcja() przyjmuje dowolnie wiele [0; +niesk] elementów
+
+
+#różne sposoby przypisywania argumentów
+
+#standardowo: 
+
+def urodziny(imie,wiek):
+  print("sto lat", imie, "Masz ", wiek, "lat")
+
+urodziny("Natalia", 21)
+urodziny(7, "Mati")
+urodziny(imie="Marysia", wiek = 7)
+urodziny(wiek = 7,imie="Marysia")
+
+
+#przypisanie wewnątrz deklaracji funkcji
+def urodziny2(imie="Staszek",wiek=7):
+  print("sto lat", imie, "Masz ", wiek, "lat")
+
+urodziny2()
+# mozemy naspisywać argument (analogia do nadpisywania zmiennych)
+x = 7
+...
+x = 8
+
+urodziny2(imie="Kasia")
