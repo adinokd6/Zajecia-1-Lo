@@ -32,3 +32,11 @@ s="Lampka"
 l="a"
 
 wyszukaj(s,l)
+
+def suma(l1,l2):
+  suma = l1+l2
+  return suma 
+
+stala1 = 32
+suma2 = suma(4,2) + 3
+print(suma2)
