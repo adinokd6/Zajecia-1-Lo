@@ -1,0 +1,17 @@
+1.Napisz funkcje, która wyliczy sumę liczb.
+Np. funkcja przyjmuje od użytkownika liczbe x i liczby sume w następujący sposób:
+1+2+3+4+5..+x
+Pamietaj, że funkcja ma byc napisana REKURENCYJNIE, czyli w returnie musi znaleźć się odwołanie do samej siebie.
+
+2.Można okreslić ile liczb ma dodatnia liczba całkowita jeżeli podzielimy ją wielokrotnie przez 10. Robimy tak dopóki
+nie zostanie nam jedna liczba, która składa się z tylko jednej cyfry (wtedy zwracamy 1). Z każdym krokiem (czyli zawsze
+kiedy dzielimy liczbe przez 10) dodajemy +1 do wartości (czyli ilości naszych cyfr).
+np. dla 995
+
+Dla naszej rekurencji 995->99/10+1->9/10+1->1 wieć jak będziemy wracać 995/10->99/10+1->1+1 i końcowo
+995->1+1+1 co daje nam nasz wynik, że liczba 995 składa się z trzech cyfr
+(tutaj przedstawilem kolejne kroki wywołań)
+
+
+Jakbyście uważali, że zadanie jest nie jasne to piszcie na grupie odrazu. Wtedy postaram się to jakoś ładniej ująć
+albo dać wam jakieś hinty.
