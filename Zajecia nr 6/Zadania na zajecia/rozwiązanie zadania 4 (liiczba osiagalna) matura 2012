@@ -1,0 +1,21 @@
+def suma_cyfr(n):
+  wynik = 0
+  while n !=0:
+    wynik += n%10
+    n = n//10
+  return wynik
+
+#123 -> 12 -> 1 -> 0
+
+def czy_osiagalna(n):
+  i = 1
+  while i <= 36:
+    k = n - i 
+    suma_k = suma_cyfr(k)
+    if suma_k + k == n:
+      return k
+    else:
+      i+=1
+  return False 
+  
+print(czy_osiagalna(5011))
