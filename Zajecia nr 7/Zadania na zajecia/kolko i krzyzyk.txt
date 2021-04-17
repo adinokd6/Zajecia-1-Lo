@@ -1,0 +1,61 @@
+def wyswietl_plansze(plansza):
+#Funckja ma za zadanie wyswietlic biezacy stan planszy. Zmienna "plansza" zawiera obecny stan planszy.
+
+def wprowadz_ruch(plansza):
+# Funkcja przyjmuje w parametrze biezacy stan tablicy i prosi uzytkownika o wykonanie ruchu.
+
+def wolne_pola(plansza):
+# Funkcja, która przegląda plansze w poszukiwaniu wolnych pol.
+
+
+def sprawdz_wygrana(plansza, sign):
+# Funkcja, która sprawdza czy ktorys z graczy wygral rozgrywke.
+
+
+
+def wykonaj_rych(plansza):
+# Funkcja, która wykonuje ruch za komputer i aktualizuje tablicę.
+
+
+def main():
+#Funkcja, ktora bedzie zawierala glowna petle gry. (To tutaj bedzie wykonywal sie twoj program).
+
+Twoim zadaniem jest napisanie prostego programu, który będzie symulować rozgrywkę w Kółko i krzyżyk pomiędzy użytkownikiem a komputerem. Aby ułatwić nieco to zadanie, 
+zdecydowaliśmy się uprościć zasady gry. Oto nasze założenia:
+
+-komputer jest X
+	
+-gracz jest O
+	
+-kazde pole jest ponumerowane od 1 do 9 w celu wyboru pola podczas rozgrywki
+	
+-użytkownik wykonuje ruch wpisujac numer pola w ktorym chce postawic swoj znak. !UWAGA! Numer wybrany przez uzytkownika musi byc zgodny z tym na planszy i 
+nie moze byc zajety.
+	
+-program sprawdza czy rozgrywka dobiegła końca. Jakie są możliwe scenariusze zakończenia gry?
+# 1) gra jest kontynuowana, 2) gra kończy się remisem, 3) gra kończy się zwycięstwem użytkownika, 4) gra kończy się zwycięstwem komputera;
+	
+-po ruchu komputera, plansza jest aktualizowana.
+
+-jak mozna zaimplementowac ruchy komputera? Przypomnij sobie o pewnej rzeczy o której rozmawialiśmy na 5 zajęciach.
+
+Rysunek planszy:
++-------+-------+-------+
+|       |       |       |
+|   1   |   2   |   3   |
+|       |       |       |
++-------+-------+-------+
+|       |       |       |
+|   4   |   5   |   6   |
+|       |       |       |
++-------+-------+-------+
+|       |       |       |
+|   7   |   8   |   9   |
+|       |       |       |
++-------+-------+-------+
+
+Dodatkowo (na za tydzien):
+-daj 3 mozliwosci wyboru (albo gre rozpoczyna komputer (i wtedy on ma znak O) lub gre rozpoczyna gracz ( i wtedy on ma znak X)). Gracz moze z gory wybrac ze gre rozpoczyna komputer, 
+sam gracz lub czy ma to nastapic w drodze losowania. Gra powinna uruchamiac sie malym menu, w ktorym beda do wyboru wlasnie te 3 opcje.
+-jako jeden z mozliwosci wyboru, dodaj mozliwosc gry miedzy dwoma osobami (gracz vs gracz). Opcja ta rowniez ma sie pojawic w polu wyboru i byc nie zalezna od polecenia wyzej
+(gracz najpierw wybiera czy chce gra przeciwko komputerowi a dopiero pozniej wybiera kto ma rozpoczynac gre).
