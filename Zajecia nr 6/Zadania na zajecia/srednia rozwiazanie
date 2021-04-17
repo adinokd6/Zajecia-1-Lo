@@ -1,0 +1,19 @@
+
+
+def srednia(n):
+  suma = 0
+  if n == 0:
+    return 0
+  else:
+    for i in range(n):  # wpisujemy n liczb
+      liczba = int(input("wpisz liczbę, którą chcesz dodać do średniej: "))
+      suma += liczba  #dodajemy liczbę do sumy 
+  return suma/n #sumę dzielimy na n 
+
+print(srednia(2))
+print(srednia(4))
+
+#n to ile liczb chcemy dodać
+#jeśli n jest 0 to srednia rowna sie 0
+#jesli nie jest zerem to sumujemy n liczb i sume dzielimy na n aby uzyskac srednia
+  
