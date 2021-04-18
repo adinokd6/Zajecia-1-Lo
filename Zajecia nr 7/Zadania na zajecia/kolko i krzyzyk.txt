@@ -20,8 +20,7 @@ def wykonaj_rych(plansza):
 def main():
 #Funkcja, ktora bedzie zawierala glowna petle gry. (To tutaj bedzie wykonywal sie twoj program).
 
-Twoim zadaniem jest napisanie prostego programu, który będzie symulować rozgrywkę w Kółko i krzyżyk pomiędzy użytkownikiem a komputerem. Aby ułatwić nieco to zadanie, 
-zdecydowaliśmy się uprościć zasady gry. Oto nasze założenia:
+Główne założenia:
 
 -komputer jest X
 	
@@ -33,7 +32,7 @@ zdecydowaliśmy się uprościć zasady gry. Oto nasze założenia:
 nie moze byc zajety.
 	
 -program sprawdza czy rozgrywka dobiegła końca. Jakie są możliwe scenariusze zakończenia gry?
-# 1) gra jest kontynuowana, 2) gra kończy się remisem, 3) gra kończy się zwycięstwem użytkownika, 4) gra kończy się zwycięstwem komputera;
+gra jest kontynuowana, gra kończy się remisem, gra kończy się zwycięstwem komputera, gra kończy się zwycięstwem użytkownika
 	
 -po ruchu komputera, plansza jest aktualizowana.
 
