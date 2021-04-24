@@ -1,3 +1,5 @@
+from random import randrange
+
 def wyswietl_plansze(plansza):
     print("+-------+-------+-------+")
     print("|       |       |       |")
@@ -12,29 +14,72 @@ def wyswietl_plansze(plansza):
 
 def wprowadz_ruch(plansza):
   ruch=int(input("Twoja kolej. Podaj numer pola: "))
-  #ruch>0 ruch<9
-  # Funkcja przyjmuje w parametrze biezacy stan tablicy i prosi uzytkownika o wykonanie ruchu.
+  while(szukaj(plansza,ruch)==False):
+    ruch=int(input("Niepoprawny ruch!. Podaj wlasciwy numer pola: "))
+  
+  wiersz,kolumna=szukaj(plansza,ruch)
+  plansza[wiersz][kolumna]="O"
 
-  # [['1','2','3'],['4','5','6'],['7','8','9']]
-  # ruch->1
-  # [['O','2','X'],['4','5','6'],['7','8','9']]
-  # komputer->3
 
-  # ruch ktory wybral uzytkownik musi zawierac sie w tej tablicy
-  #czyli dostepne liczby jakie mamy teraz to 2,4,5,6,7,8,9 bo na miejscu 1 i 3 stoi O i X
-  #oznacza to ze sprawdzamy czy liczba podana przez uzytkownika to liczba z naszej planszy
+
+def znajdz_wolne(plansza):
+  wolne_pola=[]
+    for wiersze in range(3):
+      for kolumny in range(3):
+        if(plansza[wiersze][kolumny]!="O" or plansza [wiersze][kolumny]!="X"):
+          wolne_pola.append((wiersze,kolumny))
+
+  return wolne_pola
 
 def szukaj(plansza,ruch):
   for wiersz in range(3):
     for kolumna in range(3):
       if plansza[wiersz][kolumna]==str(ruch):
         return wiersz,kolumna
+  return False
+
+def komputer(plansza):
+  print("To jest ruch komputera!")
+  wiersz=randrange(3)
+  kolumna=randrange(3)
+  wolne_pola=znajdz_wolne(plansza)
+  # not in - funkcja ktora sprawdza czy cos jest w tablicy
+  while((wiersz,kolumna) not in wolne_pola):
+      wiersz=randrange(3)
+      kolumna=randrange(3)
+  
+  plansza[wiersz][kolumna]="X"
+
+def sprawdz_wygrana(plansza, znak): #znak moze byc albo "O" albo "X"
+  wygrana=[znak,znak,znak]
+  for wiersz in range(3):
+    if(plansza[wiersz]==wygrana):
+      return True
+
+  for kolumna in range(3):
+    if(plansza[0][kolumna]==znak and plansza[1][kolumna]==znak and plansza[2][kolumna]==znak):
+      return True
+  
+
+  if(plansza[0][0]==znak and plansza[1][1]==znak and plansza [2][2]==znak):
+    return True
+  
+  if(plansza[2][0]==znak and plansza[1][1]==znak and plansza[0][2]==znak):
+    return True
+
+
 
 
 
 def main():
     plansza=[['1','2','3'],['4','5','6'],['7','8','9']]
     wyswietl_plansze(plansza)
+
+    # 0 1 2
+    # _ _ _
+    # 1 2 3 |  0
+    # 4 5 6 |  1
+    # 7 8 9 |  2
 
 
 
