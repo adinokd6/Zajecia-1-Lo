@@ -1,4 +1,5 @@
 from random import randrange
+from os import system, name
 
 def wyswietl_plansze(plansza):
     print("+-------+-------+-------+")
@@ -24,10 +25,10 @@ def wprowadz_ruch(plansza):
 
 def znajdz_wolne(plansza):
   wolne_pola=[]
-    for wiersze in range(3):
-      for kolumny in range(3):
-        if(plansza[wiersze][kolumny]!="O" or plansza [wiersze][kolumny]!="X"):
-          wolne_pola.append((wiersze,kolumny))
+  for wiersze in range(3):
+    for kolumny in range(3):
+      if(plansza[wiersze][kolumny]!="O" or plansza [wiersze][kolumny]!="X"):
+        wolne_pola.append((wiersze,kolumny))
 
   return wolne_pola
 
@@ -67,22 +68,43 @@ def sprawdz_wygrana(plansza, znak): #znak moze byc albo "O" albo "X"
   if(plansza[2][0]==znak and plansza[1][1]==znak and plansza[0][2]==znak):
     return True
 
-
+def czysc():
+    if name == 'nt':
+        _ = system('cls')
+    else:
+        _ = system('clear')
 
 
 
 def main():
-    plansza=[['1','2','3'],['4','5','6'],['7','8','9']]
+  plansza=[['1','2','3'],['4','5','6'],['7','8','9']]
+  while(True):
     wyswietl_plansze(plansza)
+    if(sprawdz_wygrana(plansza,"O")==True):
+      print("Wygrales!")
+      break
+    elif(sprawdz_wygrana(plansza,"X")==True):
+      print("Wygral komputer!")
+      break
+    elif(not znajdz_wolne(plansza)):
+      print("Remis")
+      break
+    wprowadz_ruch(plansza)
+    czysc()
+    wyswietl_plansze(plansza)
+    if(sprawdz_wygrana(plansza,"O")==True):
+      print("Wygrales!")
+      break
+    elif(sprawdz_wygrana(plansza,"X")==True):
+      print("Wygral komputer!")
+      break
+    elif(not znajdz_wolne(plansza)):
+      print("Remis")
+      break
+    komputer(plansza)
+    czysc()
 
-    # 0 1 2
-    # _ _ _
-    # 1 2 3 |  0
-    # 4 5 6 |  1
-    # 7 8 9 |  2
+while(True):
+  main()
+  break
 
-
-
-
-
-main()
