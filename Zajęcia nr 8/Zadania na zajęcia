@@ -1,0 +1,31 @@
+ZADANIE 1
+
+Liczby skojarzone
+ 
+Dwie różne liczby całkowite a i b większe od 1 nazwiemy skojarzonymi, jeśli suma wszystkich różnych dodatnich dzielników a mniejszych od a jest równa b+1, a suma wszystkich różnych dodatnich dzielników b mniejszych od b jest równa a+1.
+ 
+Skojarzone są np. liczby 140 i 195, ponieważ:
+a) dzielnikami 140 są 1, 2, 4, 5, 7, 10, 14, 20, 28, 35, 70, a ich suma wynosi 196 = 195+1.
+b) dzielnikami 195 są 1, 3, 5, 13, 15, 39, 65, a suma tych liczb równa jest 141 = 140+1.
+
+
+Dana jest liczba całkowita a większa od 1. Ułóż i zapisz w wybranej przez siebie notacji algorytm, który znajdzie i wypisze liczbę b skojarzoną z a lub komunikat „NIE”, jeśli taka liczba nie istnieje.
+
+W zapisie algorytmu możesz korzystać tylko z następujących operacji arytmetycznych: dodawania, odejmowania, mnożenia, dzielenia całkowitego i obliczania reszty z dzielenia.
+
+
+
+Zadanie 2
+
+Mamy dany ciąg liczb całkowitych a1, a2, ..., an. Zdefiniujmy ciąg sum częściowych b: ´bi = a1 + a2 + ... + ai . Twoim zadaniem jest wypisanie ciągu b dla podanego ciągu a. 
+
+przyład: 
+dla tablicy 
+1 3 2 6
+
+chcemy uzyskać tablicę:1 4 6 12
+
+
+Zadania 3
+
+https://solve.edu.pl/tasks/view/230?fbclid=IwAR0ymQ4D9uHPbf94Ui4MlzMqGv4z1eygJJzWiUsFbsmsxbXX8oS3YYs6Z1o
