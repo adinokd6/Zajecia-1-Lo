@@ -1,0 +1,27 @@
+liczba_1 = int(input("Podaj pierwszą liczbę: "))
+
+if liczba_1 > 1:
+  i = 1
+  suma = 0
+  while i <= (liczba_1*0.5):
+    if liczba_1 % i == 0:
+      suma += i
+      i = i+1
+    else:
+      i = i+1
+  
+liczba_2 = suma - 1
+
+n = 1
+suma_2 = 0
+while n <= (liczba_2*0.5):
+  if liczba_2 % n == 0:
+    suma_2 += n
+    n = n+1
+  else:
+    n = n+1
+
+if liczba_1 + 1 == suma_2 and liczba_2 + 1 == suma:
+  print("Liczbą skojarzoną do twojej liczby jest ", liczba_2)
+else:
+  print("Liczba skojarzona do twojej liczby nie istnieje")
