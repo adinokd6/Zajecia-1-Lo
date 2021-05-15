@@ -1,0 +1,10 @@
+# tab = [1,3,2,6]
+# #odp = [1,4,6,12]
+# def ciag(tab):
+#     odp = []
+#     kr = 0
+#     for i in range(len(tab)):
+#         kr += tab[i]
+#         odp.append(kr)
+#     return odp
+# print(ciag(tab))
