@@ -1,0 +1,15 @@
+#tab = [1,3,2,6]
+#tab2 = [] 
+#cos = 0
+#suma = 0
+#while cos < len(tab):
+#  suma += tab[cos]
+#  tab2.append(suma)
+#  cos+= 1
+#
+#cos = 0
+#while cos < len(tab2):
+#  print(tab2[cos])
+#  cos+= 1
+#
+#print(tab2)
