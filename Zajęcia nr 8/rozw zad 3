@@ -1,0 +1,12 @@
+a=float(input("Podaj swoje prychody: "))
+podatek = 0
+
+if a>3089:
+  if a<=85528:
+    podatek = (a-3089)*0.18
+  else :
+    podatek = (85528-3089)*0.18
+    podatek+= (a-85528)*0.32
+
+podatek = int(round(podatek))
+print(podatek)
