@@ -1,0 +1,73 @@
+import pygame
+from pygame.locals import *
+
+
+from sys import exit
+from random import randint
+import math
+import random
+
+
+pygame.init()
+
+screen = pygame.display.set_mode((640, 480))
+
+clock = pygame.time.Clock()
+
+N=10 # liczba kulek
+
+points = [] # środki okręgów
+radius = [] # promienie okręgów
+colors = [] # kolory 
+vs=[] # jak pporuszaja sie male kulki
+forgotten = set()
+
+# (r,g,b) red green blue odpowiedzialne za kolor
+
+def random_color():
+  r = random.randint(0,255)
+  g = random.randint(0,255)
+  b = random.randint(0,255)
+  return (r,g,b)
+
+for i in range(N):
+  points.append([random.randint(0,639), random.randint(0,479)])
+  radius.append(random.randint(3,10))
+  colors.append(random_color())
+  vs.append([random.randint(-2,2), random.randint(-2,2)])
+
+points[0] = [50,50] #[x,y]  x = points[0][0]  y = points[0][1]
+radius[0] = 10
+colors[0] = (255, 255, 0)
+
+
+dead = N*[False]
+#[False,False,False.....]
+
+delta_x = 3 # o ile sie przesuwam gdy wciskam strzałki
+delta_y = 3
+
+while True:
+  clock.tick(30)
+
+  for event in pygame.event.get():
+        if event.type == QUIT:
+            exit() 
+
+#[w gore, w dol, w dol, w dol, w dol, w gore, w gore, QUIT]
+
+  pressed_keys = pygame.key.get_pressed()
+
+  if pressed_keys[K_LEFT]:
+    points[0][0] -= delta_x
+  if pressed_keys[K_RIGHT]:
+    points[0][0] += delta_x
+  if pressed_keys[K_UP]:
+    points[0][1] += delta_y
+  if pressed_keys[K_DOWN]:
+    points[0][1] -= delta_y
+
+  for i in range(1, len(points)):
+    points[i][0] += vs[i][0]
+    points[i][1] += vs[i][1]
+#vs[i] jak i-ta kulka sie porusza [delta_x,delta_y]
