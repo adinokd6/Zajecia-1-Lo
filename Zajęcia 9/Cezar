@@ -1,0 +1,9 @@
+char='a'
+klucz=3
+
+litera = ord(char) + klucz
+
+print(chr(litera))
+
+# ord -> litere na ASCII
+# chr -> ASCII na litere
