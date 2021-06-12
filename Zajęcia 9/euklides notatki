@@ -1,0 +1,26 @@
+# Algorytm euklidesa
+
+chcemy policzyc nwd(a,b)
+
+własności:
+
+nwd(a,b) = nwd(b,a)
+nwd(1,a) = 1
+nwd(a,b) = nwd(b, a-b)
+nwd(a,0) = a
+
+10 | 5        
+2  | 2
+1
+
+
+5|5
+1
+
+def euklides(a,b):
+  .....
+return nwd
+
+
+
+strona z której korzystałam: https://pl.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm
